@@ -67,13 +67,13 @@ p {
     color: rgb(0, 0, 100);
     opacity: 0.75;
     user-select: none;
-
 }
 
 .loveTEXT {
     font-family: Arial, sans-serif;
     color: #e91e63;
     font-size: 36px;
+    text-align: center;
 }
 
 .loverbtn {
@@ -103,17 +103,10 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
-    display: none;
     background-color: #fff;
     border: 1px solid #e91e63;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
     font-family: 'Dancing Script', cursive;
     font-size: 24px;
     color: #e91e63;
@@ -127,8 +120,50 @@ p {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .paper {
+        padding: 10px 20px;
+        box-shadow: 1px 10px 15px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .paper.image p {
+        font-size: 20px;
+    }
+
+    .loveTEXT {
+        font-size: 24px;
+    }
+
+    .loverbtn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    img {
+        max-height: 150px;
+    }
+
+    .paper.heart {
+        width: 150px;
+        height: 150px;
+    }
+
+    .paper.heart::after {
+        background-size: 100px;
+    }
+
+    #popup {
+        width: 80%;
+        font-size: 18px;
     }
 }
