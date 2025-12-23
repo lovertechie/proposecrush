@@ -45,14 +45,12 @@
             border: 1px solid rgba(0,0,0,0.05);
         }
 
-        .paper.heart {
-            width: 150px;
-            height: 150px;
-            padding: 0;
+        ..paper.heart {
+            width: 180px;
+            height: 180px;
+            min-height: 180px; /* Keep the heart circular */
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding: 0;
         }
 
         .paper.image {
@@ -302,4 +300,5 @@
     </script>
 </body>
 </html>
+
 
