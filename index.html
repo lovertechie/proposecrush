@@ -24,18 +24,25 @@
 
         /* Paper Styling */
         .paper {
+            background-color: white; /* Solid color ensures you can't see through */
             background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
             background-size: 500px;
-            background-position: center;
-            padding: 15px;
-            width: 80vw;
-            max-width: 300px;
+            
+            /* These dimensions ensure the paper covers the ones below */
+            width: 85vw;
+            max-width: 320px;
+            min-height: 350px; /* Forces short papers to be tall enough to hide others */
+            
+            padding: 20px;
             position: absolute;
-            box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.3);
+            box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.4);
             cursor: grab;
-            user-select: none;
-            transition: transform 0.1s ease-out;
-        }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            border: 1px solid rgba(0,0,0,0.05);
 
         .paper.heart {
             width: 150px;
@@ -294,3 +301,4 @@
     </script>
 </body>
 </html>
+
